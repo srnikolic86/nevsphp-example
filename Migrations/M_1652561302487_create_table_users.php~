@@ -1,0 +1,11 @@
+<?php
+
+class M_1652561302487_create_table_users 
+{
+    function migrate() : void
+    {
+        global $db;
+        $query = "";
+        $db->query($query);
+    }
+}

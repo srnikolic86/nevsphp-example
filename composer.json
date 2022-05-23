@@ -1,0 +1,23 @@
+{
+  "name": "srnikolic86/nevsphp-example",
+  "description": "Example on how to use NevsPHP.",
+  "type": "project",
+  "license": "MIT",
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Srdan Nikolic",
+      "email": "xanatos1337@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">= 8.1",
+    "srnikolic86/nevsphp": "dev-main"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "App"
+    }
+  }
+}

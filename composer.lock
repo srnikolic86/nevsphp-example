@@ -1,0 +1,64 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d173547f29ce553f2c47371a543200f5",
+    "packages": [
+        {
+            "name": "srnikolic86/nevsphp",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/srnikolic86/nevsphp.git",
+                "reference": "43fca6d9beffe2fe34c039ca7647f82e27bf8c1d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/srnikolic86/nevsphp/zipball/43fca6d9beffe2fe34c039ca7647f82e27bf8c1d",
+                "reference": "43fca6d9beffe2fe34c039ca7647f82e27bf8c1d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 8.1"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Nevs\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Srdan Nikolic",
+                    "email": "xanatos1337@gmail.com"
+                }
+            ],
+            "description": "Simple PHP framework.",
+            "support": {
+                "issues": "https://github.com/srnikolic86/nevsphp/issues",
+                "source": "https://github.com/srnikolic86/nevsphp/tree/main"
+            },
+            "time": "2022-05-23T21:17:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "srnikolic86/nevsphp": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">= 8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
