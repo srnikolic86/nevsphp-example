@@ -22,7 +22,7 @@
    - [Get related objects](#get-related-objects)
  - [Commands](#commands)
  - [Queues](#queues)
- - [Logs](#logs)
+ - [Log](#log)
 
 
 # Intro
@@ -39,8 +39,8 @@ PHP console commands executed in the _Commands_ folder are specific to this exam
 This is minimal app config:
 ```php
 const NEVS_CONFIG = [
-    'app_root' => '/var/www/html/Example/',
-    'router_base' => '/Example',
+    'app_root' => '/var/www/html/',
+    'router_base' => '',
     'db' => [
         'host' => 'db',
         'username' => 'root',
