@@ -1,9 +1,0 @@
-
-    <?php
-    class M_1652556904178_create_users_table {
-        function migrate() {
-            global($db);
-           $query = "";
-           $db->query($query);
-        }
-    }
