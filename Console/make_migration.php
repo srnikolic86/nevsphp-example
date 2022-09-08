@@ -12,9 +12,9 @@ $migration_content = "<?php
 use Nevs\Database;
 class " . $migration_name . " 
 {
-    function migrate() : void
+    function migrate(Database|null \$DB = null) : void
     {
-        \$DB = new Database();
+        if (\$DB == null) \$DB = new Database();
     }
 }";
 
@@ -23,9 +23,9 @@ if (str_contains($migration_name, 'create')) {
 use Nevs\Database;
 class " . $migration_name . " 
 {
-    function migrate() : void
+     function migrate(Database|null \$DB = null) : void
     {
-        \$DB = new Database();
+        if (\$DB == null) \$DB = new Database();
         \$DB->CreateTable(['name'=>'name', 'fields'=>[]]);
     }
 }";
@@ -36,9 +36,9 @@ if (str_contains($migration_name, 'modify') || str_contains($migration_name, 'ad
 use Nevs\Database;
 class " . $migration_name . " 
 {
-    function migrate() : void
+     function migrate(Database|null \$DB = null) : void
     {
-        \$DB = new Database();
+        if (\$DB == null) \$DB = new Database();
         \$DB->ModifyTable(['name'=>'name', 'fields'=>[
             \"add\" => [],
             \"modify\" => [],
@@ -53,9 +53,9 @@ if (str_contains($migration_name, 'delete')) {
 use Nevs\Database;
 class " . $migration_name . " 
 {
-    function migrate() : void
+     function migrate(Database|null \$DB = null) : void
     {
-        \$DB = new Database();
+        if (\$DB == null) \$DB = new Database();
         \$DB->DeleteTable('name');
     }
 }";
