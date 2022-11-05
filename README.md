@@ -166,6 +166,7 @@ $DB->CreateTable(['name'=>'cars', 'fields'=>[
 ```
 These are available field types:
 - _int_
+- _bigint_
 - _float_
 - _double_
 - _string_
